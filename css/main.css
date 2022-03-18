@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background-color: #3d2314;
+  font-family: "Akaya Telivigala", cursive;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav ul a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+nav ul a:hover {
+  background-color: #f1dab1;
+  color: black;
+  font-weight: bold;
+}
+main {
+  background-color: #f7bd01;
+  align-items: center;
+}
+h1 {
+  margin-left: 50px;
+  font-family: "Bungee Inline", cursive;
+  font-size: 40px;
+  line-height: 60px;
+  color: #3d2314;
+}
+.titulo {
+  color: white;
+  font-size: 3.5rem;
+}
+main p {
+  font-family: "Akaya Telivigala", cursive;
+  color: #3d2314;
+  font-size: 22px;
+  line-height: 30px;
+  width: 100%;
+  text-align: justify;
+  justify-content: center;
+}
+.boton {
+  position: relative;
+}
+.boton .btn {
+  position: absolute;
+  margin-left: 45%;
+  margin-top: 20%;
+  border: 2px #4d3e2b solid;
+  border-radius: 10px;
+}
+.boton a:hover {
+  background-color: #d5bdd9;
+  color: #4d3e2b;
+}
+.hero {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9c5c7;
+}
+.card a {
+  border: 2px white solid;
+  color: white;
+}
+.card-body {
+  background-color: #f04f56;
+  color: white;
+}
+.hero h5 {
+  font-size: 20px;
+  font-family: "Akaya Telivigala", cursive;
+}
+div #cabecera {
+  background-color: #f04f56;
+  font-family: "Akaya Telivigala", cursive;
+  color: white;
+}
+div #cabecera2 {
+  background-color: #7343bc;
+  font-family: "Akaya Telivigala", cursive;
+  color: white;
+}
+div #cabecera3 {
+  background-color: #f56032;
+  font-family: "Akaya Telivigala", cursive;
+  color: white;
+}
+.recetas {
+  background-color: #f1dab1;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.recetas div h4 {
+  color: black;
+
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  display: block;
+  background-color: #f56032;
+  margin-top: 1.5rem;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+.blog {
+  background-color: #fd657e;
+}
+.blog .parrafo {
+  margin-top: 5%;
+}
+footer {
+  background-color: #3d2314;
+  font-family: "Akaya Telivigala", cursive;
+}
+footer section {
+  display: flex;
+}
+.footer-izquierdo {
+  width: 50%;
+  padding: 10px;
+}
+.footer-derecho {
+  width: 50%;
+  padding: 10px;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+footer ul a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+footer ul a:hover {
+  background-color: #f1dab1;
+  color: black;
+  font-weight: bold;
+}
