@@ -3,7 +3,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+header {
+  background-color: #99d8df;
+}
+/***********************NAV*******************************/
 nav {
   background-color: #3d2314;
   font-family: "Akaya Telivigala", cursive;
@@ -24,11 +27,15 @@ nav ul a:hover {
   color: black;
   font-weight: bold;
 }
-main {
+/***********************MAIN*******************************/
+.main-index {
   background-color: #f7bd01;
   align-items: center;
 }
-h1 {
+.main-index .contenido {
+  margin-top: 12%;
+}
+.main-index h1 {
   margin-left: 50px;
   font-family: "Bungee Inline", cursive;
   font-size: 40px;
@@ -39,7 +46,7 @@ h1 {
   color: white;
   font-size: 3.5rem;
 }
-main p {
+.main-index p {
   font-family: "Akaya Telivigala", cursive;
   color: #3d2314;
   font-size: 22px;
@@ -48,24 +55,88 @@ main p {
   text-align: justify;
   justify-content: center;
 }
-.boton {
+
+.btn {
   position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  color: #4d3e2b;
+  letter-spacing: 4px;
+  text-decoration: none;
+  overflow: hidden;
+  transition: 0.2s;
 }
 .boton .btn {
   position: absolute;
-  margin-left: 45%;
-  margin-top: 20%;
-  border: 2px #4d3e2b solid;
-  border-radius: 10px;
+  margin-left: 20%;
+  margin-top: 10%;
+  font-size: 20px;
 }
-.boton a:hover {
-  background-color: #d5bdd9;
-  color: #4d3e2b;
+.btn:hover {
+  background-color: #f9c5c7;
+  box-shadow: 0 0 10px #f9c5c7, 0 0 40px #f9c5c7, 0 0 80px #f9c5c7;
+  transition-delay: 1s;
 }
+.btn span {
+  position: absolute;
+  display: block;
+}
+#span1 {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #f9c5c7);
+}
+.btn:hover #span1 {
+  left: 100%;
+  transition: 1s;
+}
+#span3 {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #f9c5c7);
+}
+.btn:hover #span3 {
+  right: 100%;
+  transition: 1s;
+  transition-delay: 0.5s;
+}
+#span2 {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #f9c5c7);
+}
+.btn:hover #span2 {
+  top: 100%;
+  transition: 1s;
+  transition-delay: 0.25s;
+}
+#span4 {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #f9c5c7);
+}
+.btn:hover #span4 {
+  bottom: 100%;
+  transition: 1s;
+  transition-delay: 0.75s;
+}
+
+/***********************HERO (CATALOGO)*******************************/
 .hero {
   font-size: 15px;
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f9c5c7;
+}
+.hero .card {
+  border-radius: 10px;
 }
 .card a {
   border: 2px white solid;
@@ -94,6 +165,10 @@ div #cabecera3 {
   font-family: "Akaya Telivigala", cursive;
   color: white;
 }
+section .card:hover {
+  transform: scale(1.05, 1.05);
+}
+/***********************RECETAS*******************************/
 .recetas {
   background-color: #f1dab1;
   text-align: center;
@@ -112,12 +187,14 @@ div #cabecera3 {
   margin-left: 150px;
   margin-right: 150px;
 }
+/***********************BLOG*******************************/
 .blog {
   background-color: #fd657e;
 }
 .blog .parrafo {
   margin-top: 5%;
 }
+/***********************FOOTER*******************************/
 footer {
   background-color: #3d2314;
   font-family: "Akaya Telivigala", cursive;
@@ -149,4 +226,51 @@ footer ul a:hover {
   background-color: #f1dab1;
   color: black;
   font-weight: bold;
+}
+/***********************FORMULARIO HTML*******************************/
+.form header {
+  background: #99d8df;
+}
+.formulario {
+  background: #d5bdd9;
+}
+.formulario .btn {
+  background: #3d2314;
+  border: white 2px solid;
+  color: white;
+}
+/***********************PRODUCTOS HTML*******************************/
+.color2 {
+  background-color: #f9c5c7;
+}
+.catalogo h1 {
+  font-family: "Bungee Inline", cursive;
+}
+.catalogo {
+  background-color: #fd657e;
+  color: white;
+}
+.fondo {
+  transition: width 6s, height 6s, transform 6s;
+}
+.catalogo .card:hover {
+  transform: scale(1.05, 1.05);
+}
+/***********************NOSOTRAS HTML*******************************/
+.main-nosotras {
+  margin-bottom: 20px;
+  color: #3d2314;
+}
+#ourstory {
+  background-color: #fbdcdd;
+  padding-top: 10%;
+}
+#ourstory p {
+  text-align: justify;
+  padding-top: 10px;
+  padding-bottom: 40px;
+}
+#ourstory h1 {
+  font-family: "Bungee Inline", cursive;
+  text-align: center;
 }
